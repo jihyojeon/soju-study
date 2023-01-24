@@ -12,14 +12,27 @@ function closeModal() {
 
 function addItem() {
   const name = document.getElementById("name").value;
-  const image = document.getElementById("image").value;
-  const content = document.getElementById("content").value;
+  const image =
+    document.getElementById("image").value == ""
+      ? undefined
+      : document.getElementById("image").value;
+  const content =
+    document.getElementById("content").value == ""
+      ? undefined
+      : document.getElementById("content").value;
 
   closeModal();
-  showItemInList({ name, image, content });
+
+  if (name != "") {
+    showItemInList({ name, image, content });
+  }
 }
 
-function showItemInList({ name, image, content }) {
+function showItemInList({
+  name,
+  image = "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930",
+  content = "no description",
+}) {
   const list = document.getElementById("list");
   const newItemInTheList = document.createElement("li");
   newItemInTheList.innerText = name;
