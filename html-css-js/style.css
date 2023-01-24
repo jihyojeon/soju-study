@@ -1,0 +1,154 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  padding: 50px;
+}
+
+#addItemModal {
+  display: none;
+}
+
+#addItemModal .modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#addItemModal .modal-content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20 20 20;
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+}
+
+#addItemModal #closeModal {
+  align-self: flex-end;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+#addItemModal .label {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+#addItemModal .input {
+  font-size: 15px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+#button-submit {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background: green;
+  height: 30px;
+}
+
+#button-addnew {
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: skyblue;
+}
+
+button: hover {
+  cursor: pointer;
+}
+
+header {
+  font-size: 24px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 100px);
+}
+
+nav {
+  align-self: flex-start;
+  padding: 0px;
+  margin: 0px;
+  height: 300px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 10px;
+  background: beige;
+  border-radius: 5px;
+}
+
+article {
+  display: flex;
+  flex: 1;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: center;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.god {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px;
+  margin: 5px;
+  background: beige;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.god img {
+  width: 50px;
+}
+
+/* mobile first*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: lightblue;
+  }
+  .god {
+    border: 1px solid blue;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    background-color: lightpink;
+  }
+  .god {
+    border: 1px solid red;
+  }
+}
