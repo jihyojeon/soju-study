@@ -1,0 +1,22 @@
+{
+  "Halone": {
+    "title": "Halone",
+    "img": "FFXIV_Halone_Icon.png",
+    "description": "Halone, the Fury, mover of glaciers and goddess of war, commands the element of ice and is tied to the First Astral Moon (first month)."
+  },
+  "Menphina": {
+    "title": "Menphina",
+    "img": "FFXIV_Menphina_Icon.png",
+    "description": "Menphina, the Lover, keeper of the once-twin and now-lone moons and the goddess of love, commands the element of ice and is associated with the First Umbral Moon (second month)."
+  },
+  "Thaliak": {
+    "title": "Thaliak",
+    "img": "FFXIV_Thaliak_Icon.png",
+    "description": "Thaliak, the Wanderer, the god of the sea and the sky, commands the element of wind and is associated with the Second Astral Moon (third month)."
+  },
+  "Nymeia": {
+    "title": "Nymeia",
+    "img": "FFXIV_Nymeia_Icon.png",
+    "description": "Nymeia, the Mother, the goddess of the earth and the moon, commands the element of earth and is associated with the Second Umbral Moon (fourth month)."
+  }
+}
